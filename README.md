@@ -24,3 +24,9 @@ The ICO will have an admin that specifies when the ICO starts and ends or when t
 (whichever of the forementioned comes first).
 
 Our EPTX token will be tradable ONLY AFTER a specific time and data specified by the admin.
+
+In the event of an emergency, the admin can stop the ICO and can also change the deposit address in case it gets compromised.
+
+The ICO can be either in the initial, running, following, or halted state of function.
+
+All tokens not sold after the investment in the ICO event will be burned.
