@@ -21,8 +21,8 @@ interface ERC20Interface {
 
 // The Cryptos Token Contract
 contract Cryptos is ERC20Interface{
-    string public name = "Cryptos";
-    string public symbol = "CRPT";
+    string public name = "El Paso Strong";
+    string public symbol = "EPTX";
     uint public decimals = 0;
     uint public override totalSupply;
     
