@@ -1,3 +1,5 @@
+
+  
 //SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.5.0 <0.9.0;
@@ -19,8 +21,8 @@ interface ERC20Interface {
 }
 
 
-// The Cryptos Token Contract
-contract Cryptos is ERC20Interface{
+// The EPTX Token Contract
+contract EPTX is ERC20Interface{
     string public name = "El Paso Strong";
     string public symbol = "EPTX";
     uint public decimals = 0;
@@ -86,7 +88,7 @@ contract Cryptos is ERC20Interface{
 }
 
 
-contract CryptosICO is Cryptos{
+contract EPTXICO is EPTX{
     address public admin;
     address payable public deposit;
     uint tokenPrice = 0.001 ether;  // 1 ETH = 1000 CRTP, 1 CRPT = 0.001
@@ -189,7 +191,7 @@ contract CryptosICO is Cryptos{
         require(block.timestamp > tokenTradeStart); // the token will be transferable only after tokenTradeStart
         
         // calling the transfer function of the base contract
-        super.transfer(to, tokens);  // same as Cryptos.transfer(to, tokens);
+        super.transfer(to, tokens);  // same as EPTX.transfer(to, tokens);
         return true;
     }
     
@@ -197,7 +199,7 @@ contract CryptosICO is Cryptos{
     function transferFrom(address from, address to, uint tokens) public override returns (bool success){
         require(block.timestamp > tokenTradeStart); // the token will be transferable only after tokenTradeStart
        
-        Cryptos.transferFrom(from, to, tokens);  // same as super.transferFrom(to, tokens);
+        EPTX.transferFrom(from, to, tokens);  // same as super.transferFrom(to, tokens);
         return true;
      
     }
