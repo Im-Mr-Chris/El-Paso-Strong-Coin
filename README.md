@@ -6,7 +6,7 @@ El Paso Strong Coin: A utility token for the community, made by the community.
 
 Our ICO will be a smart contract that is compatible with the ERC-20 token.
 
-The token name is "El Paso Strong Coin" or "EPTX" for its symbol.
+The token name is "El Paso Strong Token" or "EPST" for its symbol.
 
 Our token is fully ERC-20 compliant and will be generated at the time of the ICO.
 
